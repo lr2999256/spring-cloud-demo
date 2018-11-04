@@ -13,6 +13,6 @@ Spring-cloud-demo
 之后要做的事
 ------
 
-1.加入oauth
-2.加入hystrix
-3.集成docker
+1. 加入oauth
+2. 加入hystrix
+3. 集成docker
