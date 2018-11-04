@@ -1,0 +1,5 @@
+include "eureka"
+include "zuul"
+include "zipkin"
+include "client1"
+include "client2"
