@@ -1,8 +1,8 @@
 zuul:
   routes:
     client1:
-      path: /client1/hello/{name}
-      serviceId: CLIENT1-SERVICE
+      path: /app1/hello/{name}
+      serviceId: APP1-SERVICE
     client2:
-      path: /client2/bye
-      serviceId: CLIENT2-SERVICE
+      path: /app2/bye
+      serviceId: APP2-SERVICE

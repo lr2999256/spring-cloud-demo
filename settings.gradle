@@ -1,5 +1,6 @@
 include "eureka"
 include "zuul"
 include "zipkin"
-include "client1"
-include "client2"
+include "app1"
+include "app2"
+include "client"
