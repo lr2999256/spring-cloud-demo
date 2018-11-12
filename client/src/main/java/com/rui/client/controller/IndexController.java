@@ -1,6 +1,5 @@
 package com.rui.client.controller;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,7 +48,7 @@ public class IndexController {
         RestTemplate restTemplate = new RestTemplate();
         String refreshTokenUrl = "http://localhost:8099/oauth/token?grant_type={grant_type}" +
                 "&refresh_token={refresh_token}&client_id={client_id}&client_secret={client_secret}";
-        Map<String,String> param = new HashMap<>(6);
+        Map<String,String> param = new HashMap<>(4);
         param.put("grant_type","refresh_token");
         param.put("refresh_token",refreshToken);
         param.put("client_id","test");

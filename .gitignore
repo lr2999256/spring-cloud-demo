@@ -26,4 +26,14 @@
 /.nb-gradle/
 gradle/
 gradlew
+app1/build/
+app1/out/
+app2/build/
+app2/out/
+client/out/
+eureka/build/
+eureka/out/
+zipkin/out/
+zuul/build/
+zuul/out/
 gradlew.bat
