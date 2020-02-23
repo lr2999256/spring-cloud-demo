@@ -41,3 +41,5 @@ gradlew.bat
 /zuul/build/
 /zuul/.gradle/
 /config/build/
+/client/build/
+/zipkin/build/

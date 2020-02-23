@@ -23,3 +23,9 @@ eureka :
       enabled: true
     serviceUrl :
       defaultZone : http://localhost:8090/eureka/
+## 暴露refresh方法
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

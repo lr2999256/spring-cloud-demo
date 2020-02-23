@@ -5,6 +5,7 @@ import com.rui.app1.service.App1Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -15,6 +16,7 @@ import javax.annotation.Resource;
  * @Time : 9:57
  **/
 @RestController
+@RefreshScope
 public class App1Controller {
 
     @Resource
