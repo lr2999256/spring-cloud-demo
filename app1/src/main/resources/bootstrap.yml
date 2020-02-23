@@ -3,6 +3,13 @@ spring:
     name: APP1-SERVICE
   zipkin:
     base-url: http://localhost:9411
+  cloud:
+    config:
+      name: APP1
+      discovery:
+        enabled: true
+        service-id: config
+      profile: dev
 server:
   port: 8091
 eureka :

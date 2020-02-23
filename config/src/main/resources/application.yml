@@ -5,8 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/lr2999256/spring-cloud-demo/config-server-file
-          basedir: target/config
+          uri: file://${user.dir}/../config-repo
 server:
   port: 8070
 eureka :
