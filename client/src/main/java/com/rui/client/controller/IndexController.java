@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.*;
 
 /**
  * @author : Rui
@@ -27,6 +30,22 @@ public class IndexController {
     @ResponseBody
     @PreAuthorize("hasAuthority('admin')")
     public String getToken(){
+        ExecutorService executors = Executors.newFixedThreadPool(10);
+        Future<Integer> future = executors.submit(new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                return 1;
+            }
+        });
+        try {
+            future.get();
+            Set set = new HashSet();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
         RestTemplate restTemplate = new RestTemplate();
         String oauthTokenUrl = "http://localhost:8099/oauth/token?username={username}&password={password}" +
                 "&grant_type={grant_type}&scope={scope}&client_id={client_id}&client_secret={client_secret}";

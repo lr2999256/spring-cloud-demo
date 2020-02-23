@@ -37,3 +37,6 @@ zipkin/out/
 zuul/build/
 zuul/out/
 gradlew.bat
+/zuul/out/
+/zuul/build/
+/zuul/.gradle/
