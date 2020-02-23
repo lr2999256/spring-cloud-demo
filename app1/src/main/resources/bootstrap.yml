@@ -10,6 +10,8 @@ spring:
         enabled: true
         service-id: config
       profile: dev
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
 server:
   port: 8091
 eureka :
