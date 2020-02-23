@@ -40,3 +40,4 @@ gradlew.bat
 /zuul/out/
 /zuul/build/
 /zuul/.gradle/
+/config/build/

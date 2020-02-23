@@ -12,6 +12,13 @@ Spring-cloud-demo
 5. client模拟登录 2018.11.11
 6. Oauth2鉴权 2018.11.11
 
+eureka端口：8090
+zipkin端口：9411
+zuul端口：8099
+config端口：8070
+app1端口：8091
+app2端口：8092
+client端口：8095
 
 ### 项目结构
 ```
