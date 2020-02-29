@@ -3,6 +3,13 @@ spring:
     name: ZIPKIN-SERVICE
 server:
   port: 9411
+zipkin:
+  storage:
+  collector:
+    kafka:
+      bootstrap-servers: 192.168.61.131:9092
+      zookeeper: 192.168.61.131:2181
+      topic: zipkin
 management:
   metrics:
     web:
